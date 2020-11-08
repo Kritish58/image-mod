@@ -1,6 +1,6 @@
 {
   "name": "image-mod",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "convert and compress image to png/jpeg format with desired quality",
   "main": "index.js",
   "scripts": {
