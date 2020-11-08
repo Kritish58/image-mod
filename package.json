@@ -1,6 +1,6 @@
 {
   "name": "image-mod",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "convert and compress image to png/jpeg format with desired quality",
   "main": "index.js",
   "scripts": {
@@ -25,7 +25,7 @@
     "image-convert"
   ],
   "author": "rishi58",
-  "license": "IOE",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Kritish58/image-mod/issues"
   },
