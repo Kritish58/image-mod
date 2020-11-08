@@ -64,10 +64,3 @@ const compressAndSave = async (obj) => {
 };
 
 module.exports = compressAndSave;
-
-compressAndSave({
-    file: {
-        path: 'C:\\Users\\acer\\Desktop\\npm_modules\\compress\\college_meme.jpg',
-        originalname: 'college_meme.jpg',
-    },
-}).then((filePath) => console.log(filePath));
