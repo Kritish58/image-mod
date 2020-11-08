@@ -1,0 +1,37 @@
+{
+  "name": "image-mod",
+  "version": "1.0.0",
+  "description": "convert and compress image to png/jpeg format with desired quality",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kritish58/image-mod.git"
+  },
+  "keywords": [
+    "image",
+    "compression",
+    "compressor",
+    "compress",
+    "convert",
+    "conversion",
+    "convertor",
+    "pnh",
+    "jpeg",
+    "image-compress",
+    "image-mod",
+    "image-convert"
+  ],
+  "author": "rishi58",
+  "license": "IOE",
+  "bugs": {
+    "url": "https://github.com/Kritish58/image-mod/issues"
+  },
+  "homepage": "https://github.com/Kritish58/image-mod#readme",
+  "dependencies": {
+    "sharp": "^0.26.2",
+    "uuid": "^8.3.1"
+  }
+}
