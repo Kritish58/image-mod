@@ -34,6 +34,33 @@ ImageMod(options).then((filePath) => {
 });
 ```
 
+#### working example using express and multer
+
+```javascript
+const express = require('express');
+const multer = require('multer');
+const ImageMod = require('image-mod');
+const path = require('path');
+const app = express();
+
+const upload = multer({ dest: path.join(__dirname, '/uploads') });
+
+app.post('/upload', upload.single('picture'), async (req, res) => {
+    const options = {
+        file: req.file,
+        imageType: 'png',
+        imageQuality: 50,
+    };
+    const filePath = await ImageMod(options);
+    return res.status(200).json({ success: true, filePath });
+});
+
+const PORT = 5000;
+app.listen(5000, () => {
+    console.log('server is running on port ' + PORT);
+});
+```
+
 ### Option
 
 | key          | type   | requirement | default | values          |
