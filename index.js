@@ -52,7 +52,7 @@ const compressAndSave = async (obj) => {
 
         let filePath = path.join(dirPath, uuid() + '_' + file.originalname);
         if (imageType === 'png') {
-            await sharp(file.path).resize().jpeg({ quality: imageQuality }).toFile(filePath);
+            await sharp(file.path).resize().png({ quality: imageQuality }).toFile(filePath);
         } else {
             await sharp(file.path).resize().jpeg({ quality: imageQuality }).toFile(filePath);
         }
